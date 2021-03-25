@@ -22,6 +22,10 @@ function App() {
                   <span>Correct answer: </span>
                   {item.answer}
                 </p>
+                <p>
+                  <span>Contributor: </span>
+                  {item.contributor}
+                </p>
                 <hr />
               </div>
             )}
