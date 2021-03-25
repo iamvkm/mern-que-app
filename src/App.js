@@ -6,21 +6,25 @@ function App() {
     <>
       <div className="App container">
         {sheetData.map((item) => (
-          <div>
-            <p className="que" key={item.queId}>
-              {item.question}
-            </p>
-            <ol>
-              <li>{item.optOne}</li>
-              <li>{item.optTwo}</li>
-              {!item.optThree ? "" : <li>{item.optThree}</li>}
-              {!item.optFour ? "" : <li>{item.optFour}</li>}
-            </ol>
-            <p className="ans">
-              <span>Correct answer: </span>
-              {item.answer}
-            </p>
-            <hr />
+          <div key={item.queId}>
+            {!item.question ? (
+              ""
+            ) : (
+              <div>
+                <p className="que">{item.question}</p>
+                <ol>
+                  <li>{item.optOne}</li>
+                  <li>{item.optTwo}</li>
+                  {!item.optThree ? "" : <li>{item.optThree}</li>}
+                  {!item.optFour ? "" : <li>{item.optFour}</li>}
+                </ol>
+                <p className="ans">
+                  <span>Correct answer: </span>
+                  {item.answer}
+                </p>
+                <hr />
+              </div>
+            )}
           </div>
         ))}
       </div>
