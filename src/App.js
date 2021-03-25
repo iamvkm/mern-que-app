@@ -11,7 +11,7 @@ function App() {
               ""
             ) : (
               <div>
-                <p className="que">{item.question}</p>
+                <p className="que"><span>{item.queId}. </span>{item.question}</p>
                 <ol>
                   <li>{item.optOne}</li>
                   <li>{item.optTwo}</li>
