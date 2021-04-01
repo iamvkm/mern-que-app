@@ -6,10 +6,7 @@ function TestThree() {
   return (
     <div className="App container">
       <p>
-        Go back{" "}
-        <Link as={Link} to="/home">
-          Home
-        </Link>
+        Go back <Link to="/">Home</Link>
       </p>
       {sheetData.map((item) => (
         <div>
