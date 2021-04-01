@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function TestFour() {
   return (
     <div className="App container">
-      <h2>Test Four - Coming Soon!</h2>
+      <h3>Test Four - Coming Soon!</h3>
       <p>
-        To access test three <a href="/three">click here</a>
+        To access test three <Link to="/three">click here</Link>
       </p>
     </div>
   );

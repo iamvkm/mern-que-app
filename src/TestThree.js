@@ -1,11 +1,12 @@
 import React from "react";
 import sheetData from "./testThree.json";
+import { Link } from "react-router-dom";
 
 function TestThree() {
   return (
     <div className="App container">
       <p>
-        Go back <a href="/">Home</a>
+        Go back <Link to="/">Home</Link>
       </p>
       {sheetData.map((item) => (
         <div>
