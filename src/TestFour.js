@@ -6,7 +6,10 @@ function TestFour() {
     <div className="App container">
       <h3>Test Four - Coming Soon!</h3>
       <p>
-        To access test three <Link to="/three">click here</Link>
+        To access test three{" "}
+        <Link as={Link} to="/three">
+          click here
+        </Link>
       </p>
     </div>
   );
