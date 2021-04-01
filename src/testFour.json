@@ -1,0 +1,13 @@
+﻿[
+  {
+    "queId": "1",
+    "courseName": "Using React Hooks",
+    "question": "Value in useRef hook is accessed by which property?",
+    "optOne": "value",
+    "optTwo": "current",
+    "optThree": "data",
+    "optFour": "response",
+    "answer": "current",
+    "contributor": "Vivek Mishra"
+  }
+]
