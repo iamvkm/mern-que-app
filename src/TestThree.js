@@ -7,7 +7,7 @@ function TestThree() {
     <div className="App container">
       <p>
         Go back{" "}
-        <Link as={Link} to="/">
+        <Link as={Link} to="/home">
           Home
         </Link>
       </p>
