@@ -8,21 +8,32 @@ function TestThree() {
         Go back <Link to="/">Home</Link>
       </p>
       {sheetData.map((item) => (
-        <div>
-          <p className="que" key={item.queId}>
-            {item.question}
-          </p>
-          <ol>
-            <li>{item.optOne}</li>
-            <li>{item.optTwo}</li>
-            {!item.optThree ? "" : <li>{item.optThree}</li>}
-            {!item.optFour ? "" : <li>{item.optFour}</li>}
-          </ol>
-          <p className="ans">
-            <span>Correct answer: </span>
-            {item.answer}
-          </p>
-          <hr />
+        <div key={item.queId}>
+          {!item.question ? (
+            ""
+          ) : (
+            <div>
+              <p className="que">
+                <span>{item.queId}. </span>
+                {item.question}
+              </p>
+              <ol>
+                <li>{item.optOne}</li>
+                <li>{item.optTwo}</li>
+                {!item.optThree ? "" : <li>{item.optThree}</li>}
+                {!item.optFour ? "" : <li>{item.optFour}</li>}
+              </ol>
+              <p className="ans">
+                <span>Correct answer: </span>
+                {item.answer}
+              </p>
+              <p>
+                <span>Contributor: </span>
+                {item.contributor}
+              </p>
+              <hr />
+            </div>
+          )}
         </div>
       ))}
     </div>
