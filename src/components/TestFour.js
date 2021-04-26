@@ -1,4 +1,4 @@
-import sheetData from "../data/TestFour.json";
+import sheetData from "../data/testFour.json";
 import { Link } from "react-router-dom";
 
 function TestFour() {
